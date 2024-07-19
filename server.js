@@ -5,7 +5,7 @@ const port =process.env.PORT ;
 const cors = require('cors');
 
 app.use(cors({
-  origin: 'http://localhost:3000', //frontend port 
+  origin: 'https://noshfront-9k86nznmm-jay-kumar-guptas-projects.vercel.app', //frontend port 
   credentials: true
 }));
 
