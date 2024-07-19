@@ -16,7 +16,7 @@ app.use(express.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 const dotenv=require('dotenv'); 
 dotenv.config();
-mongoose.connect(process.env.MONGO_URL, { useNewUrlParser: true, useUnifiedTopology: true })
+mongoose.connect(process.env.MONGO_URL)
     .then(() => {
       console.log('Database connected successfully');
     })
@@ -28,6 +28,6 @@ app.get('/',(req,res)=>{
     res.send("hello friends ");
 }) 
 app.listen(port,()=>{
-    console.log(`server is running on port ${port}`)
+    console.log(`server is running on port ${process.env.PORT}`)
 }) 
 
