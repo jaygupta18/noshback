@@ -5,7 +5,7 @@ const port =process.env.PORT ;
 const cors = require('cors');
 
 app.use(cors({
-  origin: 'https://noshfront.vercel.app/', //frontend port 
+  origin: 'https://vercel.com/jay-kumar-guptas-projects/noshfront/8x2X975CJwGZgo4WhbzekWhFE1Q7', //frontend port 
   credentials: true
 }));
 
